@@ -1,15 +1,19 @@
 import React, { useState } from 'react'
 import Navbar from '../components/Navbar'
-// import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import './AddData.css'
+import { useCrud } from '../../Crudprovider'
+import Swal from 'sweetalert2'
+
 
 const AddData = () => {
 
-    // let navigate = useNavigate()
+    let { additem } = useCrud()
+    let navigate = useNavigate()
 
-    const [allData, setAllData] = useState([])
     const [userData, setUserData] = useState(
         {
+            id:Math.floor(Math.random()*100),
             firstName: "",
             lastName: "",
             email: "",
@@ -27,9 +31,6 @@ const AddData = () => {
         setUserData((pre) => ({ ...pre, [name]: value }))
     }
 
-
-
-
     const handalsubmit = (e) => {
         e.preventDefault()
 
@@ -44,9 +45,22 @@ const AddData = () => {
                 address: "",
             }
         )
-        console.log(userData);
 
+
+        additem(userData)
+        Swal.fire({
+            title: " Add User Information Successfully !",
+            icon: "success",
+            draggable: true,
+            showConfirmButton: false,
+            timer: 1900
+        });
+
+        setTimeout(() => {
+            navigate('/')
+        }, 2000);
     }
+
 
     return (
         <>

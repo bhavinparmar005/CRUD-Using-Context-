@@ -17,7 +17,8 @@ const Navbar = () => {
                             <ul className="navbar-nav ms-auto">
                                 <li className="nav-item"><Link className="nav-link fs-5 text-light" to={`/`}> show User Information</Link></li>
                                 <li className="nav-item"><Link className="nav-link fs-5 text-light"to={`/addpost`}>Add User Information</Link></li>
-                                <li className="nav-item"><Link className="nav-link fs-5 text-light"to={`/editpost`}> Edit User Information</Link></li>
+                                {/* <li className="nav-item"><Link className="nav-link fs-5 text-light"to={`/editpost`}> Edit User Information</Link></li> */}
+                                {/* <li className="nav-item"><Link className="nav-link fs-5 text-light"to={`/demo`}> Demo</Link></li> */}
                             </ul>
                         </div>
                     </div>
@@ -32,7 +33,7 @@ const Navbar = () => {
                         <ul className="nav flex-column">
                             <li className="nav-item"><Link className="nav-link text-white" to={`/`}>show User Information</Link></li>
                             <li className="nav-item"><Link className="nav-link text-white" to={`/addpost`}> Add User Information</Link></li>
-                            <li className="nav-item"><Link className="nav-link text-white" to={`/editpost`}> Edit User Information</Link></li>
+                            {/* <li className="nav-item"><Link className="nav-link text-white" to={`/editpost`}> Edit User Information</Link></li> */}
 
                         </ul>
                     </div>
