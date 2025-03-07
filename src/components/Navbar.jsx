@@ -15,8 +15,9 @@ const Navbar = () => {
                         </button>
                         <div className="collapse navbar-collapse" id="navbarNav">
                             <ul className="navbar-nav ms-auto">
-                                <li className="nav-item"><Link className="nav-link fs-5 text-light" to={`/`}> Home</Link></li>
-                                <li className="nav-item"><Link className="nav-link fs-5 text-light" to={`/adddata`}> AddPost</Link></li>
+                                <li className="nav-item"><Link className="nav-link fs-5 text-light" to={`/`}> show User Information</Link></li>
+                                <li className="nav-item"><Link className="nav-link fs-5 text-light"to={`/addpost`}>Add User Information</Link></li>
+                                <li className="nav-item"><Link className="nav-link fs-5 text-light"to={`/editpost`}> Edit User Information</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -29,8 +30,9 @@ const Navbar = () => {
                     </div>
                     <div className="offcanvas-body">
                         <ul className="nav flex-column">
-                            <li className="nav-item"><Link className="nav-link text-white" to={`/`}> Home</Link></li>
-                            <li className="nav-item"><Link className="nav-link text-white" to={`/AddPost`}> AddPost</Link></li>
+                            <li className="nav-item"><Link className="nav-link text-white" to={`/`}>show User Information</Link></li>
+                            <li className="nav-item"><Link className="nav-link text-white" to={`/addpost`}> Add User Information</Link></li>
+                            <li className="nav-item"><Link className="nav-link text-white" to={`/editpost`}> Edit User Information</Link></li>
 
                         </ul>
                     </div>
